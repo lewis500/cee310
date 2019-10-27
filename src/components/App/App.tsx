@@ -10,7 +10,7 @@ const useStyles = makeStyles({
       padding: "0 !important",
       fontFamily: " 'Puritan', sans-serif",
       color: colors.grey["800"],
-      fontSize: '18px'
+      fontSize: "18px"
     }
   },
   title: {
@@ -33,7 +33,7 @@ const useStyles = makeStyles({
     },
     "& a:hover": {
       color: colors.pink["100"],
-      cursor: 'pointer'
+      cursor: "pointer"
     }
   },
   main: {
@@ -81,8 +81,13 @@ const Home = () => (
   </div>
 );
 
-const About = () => <div>About Page</div>;
-const titleLink = {paddingRight: '15px'}
+const About = () => (
+  <div>
+    <div>About page</div>
+    <div>going to fill this in later</div>
+  </div>
+);
+const titleLink = { paddingRight: "15px" };
 
 export default () => {
   const classes = useStyles({});
@@ -96,7 +101,7 @@ export default () => {
         <div style={titleLink}>
           <Link to="/">home</Link>
         </div>
-        <div >
+        <div>
           <Link to="/about">about</Link>
         </div>
       </div>
